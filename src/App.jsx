@@ -1,24 +1,21 @@
 
 import Hero from "./components/Hero";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import About from "./components/About";
 import Navbar from "./components/Navbar";
+import { useState } from "react";
 
 export default function App() {
+  const [activeTab, setActiveTab] = useState("home");
   return (
-    <main>
-      <div className="bg-slate-950 text-white scroll-smooth">
-        <Navbar/>
-        <Hero />
-        <About/>
-        {/* <Skills /> */}
-        <Projects />
-        <Contact />
-      </div>
-    </main>
+    <div className="bg-slate-950 text-white min-h-screen">
+      <Navbar setActiveTab={setActiveTab} />
+      <main className="pt-20">
+        {activeTab === "home" && <Hero />}
+        {activeTab === "experience" && <Experience />}
+        {activeTab === "project" && <Projects />}
+      </main>
+    </div>
 
   );
 }

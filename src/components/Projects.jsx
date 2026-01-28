@@ -4,13 +4,13 @@ const projects = [
     {
         title: "Mock Twitter Application",
         description: "This is backend application which ",
-        tech: ["Java", "Spring Boot", "Microservices", "API", "Stripe"],
+        tech: ["java", "springBoot", "Microservices", "API", "Stripe"],
         githubLink: ""
     },
     {
         title: "Shipment Tracker Application",
         description: "Kafka based async event processing system",
-        tech: ["Java", "Spring boot", "kafka", "WebSockets", "Redis"],
+        tech: ["java", "springBoot", "kafka", "WebSockets", "Redis"],
         githubLink: ""
     }
 ];
