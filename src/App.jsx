@@ -8,8 +8,8 @@ import { useState } from "react";
 export default function App() {
   const [activeTab, setActiveTab] = useState("home");
   return (
-    <div className="bg-slate-950 text-white min-h-screen">
-      <Navbar setActiveTab={setActiveTab} />
+    <div className="bg-slate-950 text-white min-h-[calc(100vh-4rem)]">
+      <Navbar setActiveTab={setActiveTab} activeTab={activeTab} />
       <main className="pt-20">
         {activeTab === "home" && <Hero />}
         {activeTab === "experience" && <Experience />}

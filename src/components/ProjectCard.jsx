@@ -2,12 +2,18 @@ import javaLogo from "../assets/logos/java-original.svg";
 import springLogo from "../assets/logos/spring-original.svg";
 import dockerLogo from "../assets/logos/docker-original.svg";
 import kafkaLogo from "../assets/logos/apachekafka-original.svg";
+import postgresLogo from "../assets/logos/postgres.svg";
+import mongoDbLogo from "../assets/logos/mongodb.svg";
+import redisLogo from "../assets/logos/redis.svg";
 
 const logo = {
     java: javaLogo,
     springBoot: springLogo,
     kafka: kafkaLogo,
-    docker: dockerLogo
+    docker: dockerLogo,
+    postgresSql: postgresLogo,
+    mongoDb : mongoDbLogo,
+    redis : redisLogo
 };
 
 function computeCssString(techString){

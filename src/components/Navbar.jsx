@@ -1,5 +1,5 @@
 
-export default function Navbar({setActiveTab}) {
+export default function Navbar({setActiveTab,activeTab}) {
 
     return (
         <nav className="fixed top-0 w-full z-50 backdrop-blur bg-slate-950/70 border-b border-white/10">
@@ -11,8 +11,10 @@ export default function Navbar({setActiveTab}) {
                     Sourabh.dev
                 </span>
             <div className=" md:flex items-center gap-6 text-white">
-                <button onClick={() => setActiveTab("project")} className="nav-link">Projects</button>
-                <button onClick={() => setActiveTab("experience")} className="nav-link">Experience</button>
+                <button onClick={() => setActiveTab("project")}
+                 className={`nav-link ${activeTab === "project" ? "text-indigo-400" : ""}`}> Projects </button>
+                <button onClick={() => setActiveTab("experience")}
+                 className={`nav-link ${activeTab === "experience" ? "text-indigo-400" : ""}`}> Experience</button>
             </div>
             </div>
         </nav>
