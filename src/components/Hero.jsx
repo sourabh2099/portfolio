@@ -2,6 +2,7 @@ import icon_formal from "../assets/logos/hero_formal.png";
 import { Download } from "lucide-react";
 import linkedInLogo from "../assets/logos/linkedin.svg";
 import gitHubLogo from "../assets/logos/github.svg";
+import mailLogo from "../assets/logos/google-gmail.svg"
 
 export default function Hero() {
     return (
@@ -32,6 +33,9 @@ export default function Hero() {
                 <a href="https://github.com/sourabh2099?tab=repositories">
                     <img src={gitHubLogo} alt="github-logo" className="w-5 h-5 invert" /></a>
 
+                <a href="mailto:sourabhchowdhury82@gmail.com">
+                    <img src={mailLogo} alt="mail-img" className="w-5 h-5" />
+                </a>
 
             </div>
 
