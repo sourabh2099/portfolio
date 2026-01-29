@@ -37,6 +37,8 @@ export default function Hero() {
                     <img src={mailLogo} alt="mail-img" className="w-5 h-5" />
                 </a>
 
+{/* heloooaso */}
+
             </div>
 
         </section>
