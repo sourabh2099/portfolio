@@ -2,7 +2,7 @@ import icon_formal from "../assets/logos/hero_formal.png";
 import { Download } from "lucide-react";
 import linkedInLogo from "../assets/logos/linkedin.svg";
 import gitHubLogo from "../assets/logos/github.svg";
-import mailLogo from "../assets/logos/google-gmail.svg"
+import mailLogo from "../assets/logos/google-gmail.svg";
 
 export default function Hero() {
     return (
@@ -20,7 +20,7 @@ export default function Hero() {
             </p>
 
             <div className="px-4 py-4 flex items-center gap-4">
-                <a href="/Java_SpringBoot_developer_Sourabh_Chowdhury.pdf"
+                <a href="./Java_SpringBoot_developer_Sourabh_Chowdhury.pdf"
                     download
                     className="px=3 py-3">
                     <Download size={20} />
@@ -36,8 +36,6 @@ export default function Hero() {
                 <a href="mailto:sourabhchowdhury82@gmail.com">
                     <img src={mailLogo} alt="mail-img" className="w-5 h-5" />
                 </a>
-
-{/* heloooaso */}
 
             </div>
 
